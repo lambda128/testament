@@ -11,14 +11,15 @@
 	window.addEventListener('popstate', (e) => {
   		history.go(1);
 	});
-	window.addEventListener('beforeunload', function(e){
-		var int =0;
-		while(int<=3){window.alert("STOP");i++;}
+	$(window).on('beforeunload', function(e){
+  		var message = '本当に更新してよろしいですか？';
+		e.returnValue = message;
+		return message;
 	});
 </script>
 </head>
 <body>
-	<h3>test04</h3>
+	<h3>test05</h3>
 	<a href="javascript:warning();">Circlend botton</a>
 </body>
 </html>
