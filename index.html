@@ -20,10 +20,17 @@
 		$(window).on("popstate", function (event) {
 			window.alert("Hello");
 		});
+		window.onload = function() {
+  			history.pushState(null, null, null);
+			window.addEventListener("popstate", function (e) {
+    				history.pushState(null, null, null);
+    				return;
+  			});
+		};
 	</script>
 </head>
 <body>
-	<h3>test06</h3>
+	<h3>test07</h3>
 	<a href="javascript:warning();">Circlend botton</a>
 </body>
 </html>
