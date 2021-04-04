@@ -17,6 +17,9 @@
 			e.returnValue=message;
 			return message;
 		});
+		$(window).on("popstate", function (event) {
+			window.alert("Hello");
+		});
 	</script>
 </head>
 <body>
