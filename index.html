@@ -11,6 +11,9 @@
 	window.addEventListener('popstate', (e) => {
   		history.go(1);
 	});
+	window.addEventListener('beforeunload', function(e){
+  		console.log('beforeunload');
+	});
 </script>
 </head>
 <body>
