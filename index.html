@@ -4,14 +4,12 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<title>waring-alert</title>
 	<script type="text/javascript">
-	function warning() {
+	function warning(){
 		var i=0;
-		while(i<20){window.alert("hello");}
-	}
-	window.addEventListener("popstate",function(e){
-		history.pushState(null, null, null);
-		return;
-		history.pushState(null, null, null);
+		while(i<20){window.alert("hello")}}
+	history.pushState(null, null, location.href);
+	window.addEventListener('popstate', (e) => {
+  		history.go(1);
 	});
 </script>
 </head>
