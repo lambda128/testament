@@ -4,19 +4,20 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<title>waring-alert</title>
 	<script type="text/javascript">
-	function warning(){
-		var i=0;
-		while(i<20){window.alert("hello")}}
-	history.pushState(null, null, location.href);
-	window.addEventListener('popstate', (e) => {
-  		history.go(1);
-	});
-	$(window).on('beforeunload', function(e){
-  		var message = '本当に更新してよろしいですか？';
-		e.returnValue = message;
-		return message;
-	});
-</script>
+		function warning(){
+			var i=0;
+			while(i<20){window.alert("hello")}
+		}
+		history.pushState(null, null, location.href);
+		window.addEventListener('popstate', (e) => {
+  			history.go(1);
+		});
+		$(window).on('beforeunload',function(e){
+  			var message='本当に更新してよろしいですか？';
+			e.returnValue=message;
+			return message;
+		});
+	</script>
 </head>
 <body>
 	<h3>test05</h3>
