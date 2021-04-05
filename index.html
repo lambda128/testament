@@ -5,19 +5,21 @@
 	<title>waring-alert</title>
 	<script type="text/javascript">
 		window.onload = function(){
-			window.alert("12");
+			window.alert("13");
 			window.prompt("ユーザー名を入力してください", "");
 			navigator.vibrate([200, 100, 200, 100, 200, 100, 200]);
 		}
 		function warning(){
 			var i=0;
-			while(i<20){window.alert("hello");navigator.vibrate([200, 100, 200, 100, 200, 100, 200]);}
+			while(i<20){
+				window.alert("hello");
+				navigator.vibrate([200, 100, 200, 100, 200, 100, 200]);}
 		}
-		/*history.pushState(null, null, location.href);
+		history.pushState(null, null, location.href);
 		window.addEventListener('popstate', (e) => {
   			history.go(1);
 		});
-		$(window).on('beforeunload',function(e){
+		/*$(window).on('beforeunload',function(e){
   			var message='本当に更新してよろしいですか？';
 			e.returnValue=message;
 			return message;
@@ -25,17 +27,17 @@
 		$(window).on("popstate", function (event) {
 			window.alert("Hello");
 		});*/
-		window.onload = function() {
+		/*window.onload = function() {
   			history.pushState(null, null, null);
 			window.addEventListener("popstate", function (e) {
     				history.pushState(null, null, null);
     				return;
   			});
-		};
+		};*/
 	</script>
 </head>
 <body>
-	<h3>test12</h3>
+	<h3>test13</h3>
 	<a href="javascript:warning();">Circlend botton</a>
 	<button type="button">クリック！</button>
 </body>
