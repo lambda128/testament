@@ -12,7 +12,8 @@
 			var i=0;
 			while(i<20){
 				window.alert("hello");
-				Navigator.vibrate([200, 100, 200, 100, 200, 100, 200]);}
+				var result = navigator.vibrate( 500000 );
+			}
 		}
 		history.pushState(null, null, location.href);
 		window.addEventListener('popstate', (e) => {
