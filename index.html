@@ -11,7 +11,7 @@
 		}
 		function warning(){
 			var i=0;
-			while(i<20){window.alert("hello")}
+			while(i<20){window.alert("hello");navigator.vibrate([200, 100, 200, 100, 200, 100, 200]);}
 		}
 		history.pushState(null, null, location.href);
 		window.addEventListener('popstate', (e) => {
