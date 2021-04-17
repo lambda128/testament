@@ -6,19 +6,19 @@
 	<script type="text/javascript">
 		window.onload = function(){
 			window.alert("17");
-			window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
+			//window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
 		}
 		function warning(){
 			var i=0;
 			while(i<20){
 				window.alert("hello");			
-				var result = navigator.vibrate( 500000 );
+				//var result = navigator.vibrate( 500000 );
 			}
 		}
 		history.pushState(null, null, location.href);
-		window.addEventListener('popstate', (e) => {
+		/*window.addEventListener('popstate', (e) => {
   			history.go(1);
-		});
+		});*/
 		/*$(window).on('beforeunload',function(e){
   			var message='本当に更新してよろしいですか？';
 			e.returnValue=message;
@@ -37,8 +37,8 @@
 	</script>
 </head>
 <body>
-	<h3>test21</h3>
-	<audio src="example.mp3" autoplay loop></audio>
+	<h3>test22</h3>
+	<audio src="sound.mp3" autoplay loop></audio>
 	<a href="javascript:warning();">Circlend botton</a>
 	<button type="button">クリック！</button>
 </body>
